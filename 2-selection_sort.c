@@ -28,11 +28,11 @@ void selection_sort(int *array, size_t size)
 			if (array[j] < array[minIndex])
 			{
 				minIndex = j;
+				print_array(array, size);
 			}
 		}
 		temp = array[minIndex];
 		array[minIndex] = array[i];
 		array[i] = temp;
 	}
-	print_array(array, size);
 }

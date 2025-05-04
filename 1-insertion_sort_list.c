@@ -97,9 +97,9 @@ void insertion_sort_list(listint_t **list)
 		{
 			swap_nodes(list, prev_node, current);
 			prev_node = current->prev;
+			print_list(*list);
 		}
 
 		current = next;
-		print_list(*list);
 	}
 }
